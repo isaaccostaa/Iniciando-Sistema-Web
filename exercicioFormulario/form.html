@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+</head>
+
+<body>
+
+    <h1>Cadastro de Produtos</h1>
+
+    <form>
+        <label for="nome">Nome do Produto</label><br>
+        <input type="text" id="nome" name="nome" required>
+
+        <br><br>
+
+        <label for="descricao">Descrição</label><br>
+        <textarea id="descricao" name="descricao" rows="5" cols="40"></textarea>
+
+        <br><br>
+
+        <label for="categoria">Categoria</label><br>
+        <select id="categoria" name="categoria" required>
+            <option value="">Selecione uma categoria</option>
+            <option value="eletronicos">Eletrônicos</option>
+            <option value="roupas">Roupas</option>
+            <option value="alimentos">Alimentos</option>
+            <option value="papelaria">Papelaria</option>
+            <option value="acessorios">Acessórios</option>
+        </select>
+
+        <br><br>
+
+        <label for="preco">Preço</label><br>
+        <input type="text" id="preco" name="preco" placeholder="R$ 0,00" required>
+
+        <br><br>
+
+        <label for="quantidade">Quantidade em Estoque</label><br>
+        <input type="number" id="quantidade" name="quantidade" min="0" required>
+
+        <br><br>
+
+        <label for="validade">Data de Validade</label><br>
+        <input type="date" id="validade" name="validade">
+
+        <br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+    </form>
+
+</body>
+
+</html>
